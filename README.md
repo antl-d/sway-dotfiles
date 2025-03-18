@@ -9,7 +9,7 @@ This repository contains my Sway, Waybar, Wofi, Mako, Alacritty, and Gtklock con
 
 ## Make sure you have the following installed:
 - **sway**: Window manager
-- **swayidle**: Idle mamangement daemon for sway (optional)
+- **swayidle**: Idle manangement daemon for sway (optional)
 - **waybar**: Status bar
 - **wofi**: Application launcher
 - **mako**: Notification daemon
@@ -41,9 +41,9 @@ chmod +x ~/dotfiles/waybar/scripts/*.sh
 ```
 
 ## Notes
-User-Specific Settings: Replace placeholders in the configs with your own paths (e.g., wallpapers, usernames).
-Fonts: Install [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka).
-Theme: Install [Nordic-bluish-accent](https://www.gnome-look.org/p/1267246) - used by gtklock.
+- User-Specific Settings: Replace placeholders in the configs with your own paths (e.g., wallpapers, usernames).
+- Fonts: Install [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka).
+- Theme: Install [Nordic-bluish-accent](https://www.gnome-look.org/p/1267246) - used by gtklock.
 **Optional:**
-Icons: Install [Tela-circle-orange-dark](https://github.com/vinceliuice/Tela-circle-icon-theme)
-Wallpaper: Download the wallpaper from [here](https://wall.alphacoders.com/big.php?i=1347602).
+- Icons: Install [Tela-circle-orange-dark](https://github.com/vinceliuice/Tela-circle-icon-theme)
+- Wallpaper: Download the wallpaper from [here](https://wall.alphacoders.com/big.php?i=1347602).
