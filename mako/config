@@ -1,0 +1,44 @@
+# Set background color with 70% opacity
+background-color=#1E1F29B3
+
+# Set text color
+text-color=#ECEFF4
+
+# Set border color (optional)
+border-color=#FFA500
+
+# Set border size (optional)
+border-size=2
+
+# Set notification width and height
+width=400
+height=800
+
+# Set margin (space between notifications and screen edges)
+margin=20
+
+# Set padding (space inside notifications)
+padding=10
+
+# Set font (optional)
+font=Iosevka Nerd Font 12
+
+# Set rounded corners (optional)
+border-radius=8
+
+# Set timeout for notifications (in milliseconds)
+default-timeout=5000
+
+# Set urgency levels (low, normal, critical)
+[urgency=low]
+background-color=#1E1F29B3
+text-color=#FFD700
+
+[urgency=normal]
+background-color=#1E1F29B3
+text-color=#ECEFF4
+
+[urgency=critical]
+background-color=#1E1F29B3
+text-color=#FFA500
+border-color=#FFD700

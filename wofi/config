@@ -1,0 +1,2 @@
+# Set the path to your Wofi style.css (replace "your-username" with your actual username)
+style=/home/your-username/.config/wofi/style.css

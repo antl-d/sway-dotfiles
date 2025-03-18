@@ -1,0 +1,174 @@
+/* Custom Waybar Style */
+* {
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    font-family: "FontAwesome", "Iosevka Nerd Font", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #1E1F29; /* Dark blue background */
+    color: #ECEFF4; /* Off-white text */
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ECEFF4; /* Off-white text */
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background-color: #2E3440; /* Dark gray-blue background for focused workspace */
+    color: #FFA500; /* Orange text */
+    border-bottom: 3px solid #FFA500; /* Orange underline */
+}
+
+#workspaces button.urgent {
+    background-color: #FFD700; /* Yellow background for urgent workspace */
+    color: #1E1F29; /* Dark blue text */
+}
+
+/* Clock */
+#clock {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #2E3440; /* Dark gray-blue background */
+    color: #ECEFF4; /* Off-white text */
+    font-size: 16px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+}
+
+/* CPU */
+#cpu {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #FFA500; /* Orange background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+/* Memory */
+#memory {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #FFD700; /* Yellow background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+/* Network */
+#network {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #81A1C1; /* Soft blue background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+#network.disconnected {
+    background-color: #4C566A; /* Medium gray-blue background when disconnected */
+    color: #ECEFF4; /* Off-white text */
+}
+
+/* PulseAudio */
+#pulseaudio {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #81A1C1; /* Soft blue background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+#pulseaudio.muted {
+    background-color: #4C566A; /* Medium gray-blue background when muted */
+    color: #ECEFF4; /* Off-white text */
+}
+
+/* Bluetooth */
+#bluetooth {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #81A1C1; /* Soft blue background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+#bluetooth.disabled {
+    background-color: #4C566A; /* Medium gray-blue background when disabled */
+    color: #ECEFF4; /* Off-white text */
+}
+
+/* Battery */
+#battery {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #FFD700; /* Yellow background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+#battery.charging {
+    background-color: #FFA500; /* Orange background when charging */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #FF5555; /* Red background when critical */
+    color: #ECEFF4; /* Off-white text */
+}
+
+/* Custom Weather */
+#custom-weather {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #4C566A; /* Medium gray-blue background */
+    color: #ECEFF4; /* Off-white text */
+}
+
+/* Tray */
+#tray {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #2E3440; /* Dark gray-blue background */
+}
+
+/* Custom Arch Icon */
+#custom-arch {
+    padding-left: 8px;
+    padding-right: 14px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #81A1C1; /* Soft blue background */
+    color: #1E1F29; /* Dark blue text */
+    font-size: 18px; /* Slightly larger icon */
+}
+
+#custom-arch:hover {
+    background-color: #4C566A; /* Medium gray-blue on hover */
+}
+
+/* Focused Window */
+#window {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #2E3440; /* Dark gray-blue background */
+    color: #ECEFF4; /* Off-white text */
+    font-weight: bold; /* Make the text bold */
+}
+
+#window:hover {
+    color: #FFA500; /* Orange text on hover */
+}
+
+/* Custom Mic */
+#custom-mic {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #4C566A; /* Medium gray-blue background */
+    color: #ECEFF4; /* Off-white text */
+}
+
+/* Custom Audio Sink */
+#custom-audio-sink {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #4C566A; /* Medium gray-blue background */
+    color: #ECEFF4; /* Off-white text */
+}

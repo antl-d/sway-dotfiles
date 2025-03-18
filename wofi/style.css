@@ -1,0 +1,46 @@
+/* Custom Wofi CSS */
+window {
+    margin: 0 20px 20px 0;
+    border: 2px solid #FFA500; /* Orange border */
+    background-color: #1E1F29; /* Dark blue background */
+    border-radius: 10px;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #ECEFF4; /* Off-white text for input */
+    background-color: #2E3440; /* Dark gray-blue background for input */
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent; /* Transparent background */
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent; /* Transparent background */
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #ECEFF4; /* Off-white text for unfocused entries */
+}
+
+#entry:selected {
+    background-color: #FFA500; /* Orange background for selected entry */
+    border-radius: 5px;
+}
+
+#entry:selected #text {
+    color: #1E1F29; /* Dark blue text for focused/selected entry */
+}

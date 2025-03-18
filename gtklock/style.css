@@ -1,0 +1,63 @@
+/* Semi-transparent overlay when the form is visible */
+window:not(.hidden) {
+    background-color: rgba(30, 31, 41, 0.7); /* Dark blue with transparency (#1E1F29) */
+}
+
+/* Custom font and text color */
+label {
+    font-family: "Iosevka Nerd Font", sans-serif;
+    font-size: 28px;
+    color: #FFA500; /* Orange text */
+}
+
+/* Style the prompt box */
+#prompt {
+    background-color: rgba(46, 52, 64, 0.8); /* Dark gray-blue with transparency (#2E3440) */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding around the prompt */
+    border: 2px solid #81A1C1; /* Soft blue border */
+}
+
+/* Style the input field */
+entry {
+    font-family: "Iosevka Nerd Font", sans-serif;
+    font-size: 24px;
+    color: #81A1C1; /* Blue text */
+    background-color: rgba(46, 52, 64, 0.8); /* Dark gray-blue with transparency (#2E3440) */
+    border: 2px solid #81A1C1; /* Soft blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input field */
+}
+
+/* Style the clock (if enabled) */
+#clock {
+    font-family: "Iosevka Nerd Font", sans-serif;
+    font-size: 24px;
+    color: #FFD700; /* Yellow text */
+}
+
+/* Style the user list (if enabled) */
+#user-list {
+    background-color: rgba(46, 52, 64, 0.8); /* Dark gray-blue with transparency (#2E3440) */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the user list */
+    border: 2px solid #81A1C1; /* Soft blue border */
+}
+
+/* Style the user list buttons */
+#user-list button {
+    font-family: "Iosevka Nerd Font", sans-serif;
+    font-size: 18px;
+    color: #ECEFF4; /* Off-white text */
+    background-color: rgba(76, 86, 106, 0.8); /* Medium gray-blue with transparency (#4C566A) */
+    border: 2px solid #81A1C1; /* Soft blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the buttons */
+    margin: 5px; /* Margin between buttons */
+}
+
+/* Style the user list buttons on hover */
+#user-list button:hover {
+    background-color: rgba(129, 161, 193, 0.8); /* Soft blue with transparency (#81A1C1) */
+    color: #1E1F29; /* Dark blue text */
+}

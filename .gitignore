@@ -1,0 +1,28 @@
+# Ignore OS-specific files
+.DS_Store
+.thumbs.db
+
+# Ignore sensitive files
+*.swp
+*.bak
+*.tmp
+*.log
+*.key
+*.pem
+*.env
+*.token
+*.secret
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore compiled files
+*.pyc
+*.o
+*.so
+*.class
+
+# Ignore local overrides
+local/
+overrides/

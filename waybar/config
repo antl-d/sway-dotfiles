@@ -1,0 +1,79 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["sway/workspaces", "sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "network", "pulseaudio", "custom/audio-sink", "custom/mic", "bluetooth", "battery", "custom/weather", "tray", "custom/arch"],
+    "sway/window": {
+        "format": "{}",
+        "max-length": 50,
+        "align": "left"
+    },
+    "sway/workspaces": {
+        "format": "{name}",
+        "all-outputs": true
+    },
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 5
+    },
+    "memory": {
+        "format": "󰍛 {used:0.1f}G/{total:0.1f}G",
+        "interval": 5
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": ["", "", ""],
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+    "custom/mic": {
+        "exec": "~/.config/waybar/scripts/mic-status.sh",
+        "interval": 1,
+        "format": "{}",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": " {essid}({signalStrength}%)",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip": false
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": " off",
+        "format-connected": " {device_alias}",
+        "tooltip": false,
+        "on-click": "blueman-manager"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": false
+    },
+    "custom/weather": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "interval": 600,
+        "tooltip": false
+    },
+    "tray": {
+        "spacing": 5
+    },
+    "custom/arch": {
+        "format": "",
+        "on-click": "wofi --width=400 --height=300 --show drun --location top-left --xoffset 1480 --yoffset 60",
+        "tooltip": false
+    },
+    "custom/audio-sink": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/audio-sink.sh",
+        "interval": 5,
+        "tooltip": true
+    }
+}

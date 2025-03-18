@@ -1,0 +1,41 @@
+[window]
+opacity = 0.8
+
+[colors.bright]
+black = "#4C566A"       # Medium gray-blue
+blue = "#81A1C1"        # Soft blue
+cyan = "#81A1C1"        # Soft blue
+green = "#81A1C1"       # Soft blue
+magenta = "#81A1C1"     # Soft blue
+red = "#FFA500"         # Orange
+white = "#ECEFF4"       # Off-white
+yellow = "#FFD700"      # Yellow
+
+[colors.cursor]
+cursor = "#FFA500"      # Orange cursor
+text = "#1E1F29"        # Dark blue text
+
+[colors.normal]
+black = "#1E1F29"       # Dark blue
+blue = "#81A1C1"        # Soft blue
+cyan = "#81A1C1"        # Soft blue
+green = "#81A1C1"       # Soft blue
+magenta = "#81A1C1"     # Soft blue
+red = "#FFA500"         # Orange
+white = "#A6ADC8"       # Light gray-blue
+yellow = "#FFD700"      # Yellow
+
+[colors.primary]
+background = "#1E1F29"  # Dark blue background
+foreground = "#ECEFF4"  # Off-white text
+
+[colors.selection]
+background = "#FFA500"  # Orange selection background
+text = "#1E1F29"        # Dark blue text
+
+[font]
+size = 12
+
+[font.normal]
+family = "Iosevka Nerd Font"
+style = "Regular"
