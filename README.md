@@ -18,7 +18,7 @@ This repository contains my Sway, Waybar, Wofi, Mako, Alacritty, and Gtklock con
 - **alacritty**: Terminal emulator
 - **gtklock**: Lock screen
 
-**For waybar modules:**
+**For scripts to work correctly (what I have on my system - adjust accordingly):**
 - pipewire
 - pipewire-pulse
 - iwd
@@ -26,6 +26,7 @@ This repository contains my Sway, Waybar, Wofi, Mako, Alacritty, and Gtklock con
 - bluez-utils
 - blueman
 - curl
+- acpilight
 
 ## Clone this repository
 ```bash
@@ -45,6 +46,7 @@ ln -s ~/dotfiles/gtklock ~/.config/gtklock
 ## Ensure the scripts are executable:
 ```bash
 chmod +x ~/dotfiles/waybar/scripts/*.sh
+chmod +x ~/dotfiles/sway/scripts/*.sh
 ```
 
 ## Notes

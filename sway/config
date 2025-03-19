@@ -17,9 +17,9 @@ set $right l
 set $term alacritty
 # Your preferred application launcher
 set $menu wofi --width=400 --height=300 --show drun --location top-left --xoffset 1480 --yoffset 60
-# Set to your username
+# Set the user (replace "your-username" with your actual username)
 set $user your_username
-# Set the path to the wallpaper
+# Set the path to the wallpaper (replace "path_to_wallpaper" with the actual path)
 set $wallpaper /home/$user/path_to_wallpaper
 
 ### Output configuration
@@ -226,16 +226,16 @@ bindsym $mod+r mode "resize"
 # Utilities:
 #
     # Special keys to adjust volume via PulseAudio
-    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle && ~/.config/sway/scripts/volume-notify.sh
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5% && ~/.config/sway/scripts/volume-notify.sh
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5% && ~/.config/sway/scripts/volume-notify.sh
+    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle && ~/.config/sway/scripts/mic-notify.sh
     # Special keys to adjust brightness via brightnessctl
     #bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     #bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Brightness control with acpilight
-    bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-    bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+    bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 && ~/.config/sway/scripts/brightness-notify.sh
+    bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 && ~/.config/sway/scripts/brightness-notify.sh
     # Special key to take a screenshot with grim
     bindsym Print exec grimshot save screen
     bindsym Shift+Print exec grimshot save area
@@ -247,7 +247,7 @@ exec swayidle -w \
     timeout 600 'gtklock -S -H -T 10' \
     resume 'swaymsg "output * dpms on"' \
     timeout 1770 'notify-send -u critical "System will suspend in 30 seconds"' \
-    timeout 1800 '~/.config/sway/check-battery.sh' \
+    timeout 1800 '~/.config/sway/scripts/check-battery.sh' \
     resume 'swaymsg "output * dpms on"' \
     before-sleep 'gtklock -S -H -T 10'
 
