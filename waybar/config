@@ -4,7 +4,7 @@
     "height": 30,
     "modules-left": ["sway/workspaces", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio", "custom/audio-sink", "custom/mic", "bluetooth", "battery", "custom/weather", "tray", "custom/arch"],
+    "modules-right": ["cpu", "memory", "network", "pulseaudio", "custom/audio-sink", "custom/mic", "bluetooth", "battery", "custom/weather", "tray", "custom/scratchpad", "custom/arch"],
     "sway/window": {
         "format": "{}",
         "max-length": 50,
@@ -64,6 +64,13 @@
     },
     "tray": {
         "spacing": 5
+    },
+    "custom/scratchpad": {
+        "exec": "~/.config/waybar/scripts/scratchpad.sh",
+        "interval": 1,  /* Update every second */
+        "format": "{}",
+        "on-click": "~/.config/waybar/scripts/scratchpad.sh click",
+        "tooltip": false
     },
     "custom/arch": {
         "format": "",

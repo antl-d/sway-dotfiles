@@ -172,3 +172,15 @@ window#waybar {
     background-color: #4C566A; /* Medium gray-blue background */
     color: #ECEFF4; /* Off-white text */
 }
+
+/* Custom Scratchpad */
+#custom-scratchpad {
+    padding: 0 12px;
+    margin: 0 5px; /* Increased margin for spacing */
+    background-color: #81A1C1; /* Soft blue background */
+    color: #1E1F29; /* Dark blue text */
+}
+
+#custom-scratchpad:hover {
+    background-color: #4C566A; /* Medium gray-blue on hover */
+}
