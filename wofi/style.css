@@ -6,6 +6,11 @@ window {
     border-radius: 10px;
 }
 
+* {
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 12pt;
+}
+
 #input {
     margin: 5px;
     border: none;
