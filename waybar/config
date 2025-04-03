@@ -54,6 +54,12 @@
     "battery": {
         "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""],
+        "states": {
+            "warning": 30,
+            "critical": 10
+        },
+        "on-update": "~/.config/waybar/scripts/battery-notify.sh",
+        "interval": 60,
         "tooltip": false
     },
     "custom/weather": {
